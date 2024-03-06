@@ -16,6 +16,11 @@ order by 3,4
 --order by 3,4
 
 --SELECT DATA THAT WE ARE GOING TO BE USING
+  SELECT LOCATION,DATE,TOTAL_CASES,TOTAL_DEATHS,new_cases,population
+FROM COVIDDEATH
+where location like '%state%'
+AND continent IS NOT NULL
+ORDER BY 1,2
 
 --looking at total cases vs total death
 --shows likelihood of dying if you have covid in your country
